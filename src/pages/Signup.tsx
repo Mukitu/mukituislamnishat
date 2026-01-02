@@ -61,7 +61,7 @@ export default function SignupPage() {
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-3 rounded-lg bg-background border border-border focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
-                  placeholder="John Doe"
+                  placeholder="Enter your full name"
                 />
               </div>
 
@@ -77,7 +77,7 @@ export default function SignupPage() {
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-3 rounded-lg bg-background border border-border focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
-                  placeholder="you@example.com"
+                  placeholder="you@gmail.com"
                 />
               </div>
 
