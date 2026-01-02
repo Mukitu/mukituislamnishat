@@ -91,7 +91,7 @@ export default function Footer() {
             © 2026 Mukitu Islam Nishat. All rights reserved.
           </p>
           <p className="text-background/60 text-sm">
-            Built with passion and clean code.
+            
           </p>
         </div>
       </div>
