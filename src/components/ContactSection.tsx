@@ -88,7 +88,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <p className="font-medium text-foreground">Location</p>
-                  <p className="text-muted-foreground">Bangladesh</p>
+                  <p className="text-muted-foreground">Rajshahi,Bangladesh</p>
                 </div>
               </div>
             </div>
