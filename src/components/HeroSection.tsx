@@ -12,16 +12,18 @@ const HeroSection = () => {
 
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      
       {/* Background Effects */}
       <div className="absolute inset-0 bg-hero-gradient" />
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-pulse" />
       <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-primary/5 rounded-full blur-3xl animate-pulse delay-1000" />
-      
+
       {/* Grid Pattern */}
       <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:60px_60px]" />
 
       <div className="container-custom relative z-10 pt-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
+          
           {/* Left Content */}
           <div className="text-center lg:text-left order-2 lg:order-1">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6 animate-fade-in">
@@ -75,59 +77,46 @@ const HeroSection = () => {
             </div>
           </div>
 
-        {/* Right Content - Profile Image */}
-{/* Right Content - Profile Image */}
-<div className="flex justify-center lg:justify-end order-1 lg:order-2">
-  <div className="relative animate-slide-up">
+          {/* Right Content - Profile Image */}
+          <div className="flex justify-center lg:justify-end order-1 lg:order-2">
+            <div className="relative animate-slide-up">
 
-    {/* Glow Effect */}
-    <div className="absolute inset-0 bg-primary/20 rounded-full blur-3xl scale-110" />
+              {/* Glow Effect */}
+              <div className="absolute inset-0 bg-primary/20 rounded-full blur-3xl scale-110" />
 
-    {/* Image Container */}
-    <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 animate-float group">
-      
-      {/* Rotating Gradient Border */}
-      <div
-        className="absolute inset-0 rounded-full p-1 bg-gradient-to-r from-primary via-primary/50 to-transparent animate-spin"
-        style={{ animationDuration: "8s" }}
-      >
-        {/* Remove inner bg layer */}
-        <div className="w-full h-full rounded-full overflow-hidden" />
-      </div>
+              {/* Image Container */}
+              <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 animate-float group">
 
-      {/* Profile Image */}
-      <div className="absolute inset-0 rounded-full overflow-hidden flex items-center justify-center transition-transform duration-500 group-hover:scale-105">
-        <img
-          src="/mypic.jpeg"
-          alt="Profile"
-          className="w-full h-full object-cover rounded-full"
-        />
-      </div>
-
-      {/* Optional Soft Glass Overlay */}
-      <div className="absolute inset-0 rounded-full bg-white/5 backdrop-blur-sm pointer-events-none"></div>
-
-    </div>
-  </div>
-</div>
-
-
-      {/* Optional Glass Overlay */}
-      <div className="absolute inset-0 rounded-full bg-white/5 backdrop-blur-sm pointer-events-none"></div>
-
-    </div>
-  </div>
-</div>
-
-                {/* Floating Elements */}
-                <div className="absolute -top-4 -right-4 px-4 py-2 glass-card text-sm font-medium animate-bounce" style={{ animationDuration: '3s' }}>
-                  <span className="text-primary">MERN</span> Stack
+                {/* Rotating Gradient Border */}
+                <div
+                  className="absolute inset-0 rounded-full p-1 bg-gradient-to-r from-primary via-primary/50 to-transparent animate-spin"
+                  style={{ animationDuration: '8s' }}
+                >
+                  <div className="w-full h-full rounded-full overflow-hidden" />
                 </div>
-                <div className="absolute -bottom-4 -left-4 px-4 py-2 glass-card text-sm font-medium animate-bounce" style={{ animationDuration: '3.5s' }}>
-                  <span className="text-primary">583+</span> Clients
+
+                {/* Profile Image */}
+                <div className="absolute inset-0 rounded-full overflow-hidden flex items-center justify-center transition-transform duration-500 group-hover:scale-105">
+                  <img
+                    src="/mypic.jpeg"
+                    alt="Profile"
+                    className="w-full h-full object-cover rounded-full"
+                  />
                 </div>
+
+                {/* Optional Soft Glass Overlay */}
+                <div className="absolute inset-0 rounded-full bg-white/5 backdrop-blur-sm pointer-events-none"></div>
+
               </div>
             </div>
+          </div>
+
+          {/* Floating Elements */}
+          <div className="absolute -top-4 -right-4 px-4 py-2 glass-card text-sm font-medium animate-bounce" style={{ animationDuration: '3s' }}>
+            <span className="text-primary">MERN</span> Stack
+          </div>
+          <div className="absolute -bottom-4 -left-4 px-4 py-2 glass-card text-sm font-medium animate-bounce" style={{ animationDuration: '3.5s' }}>
+            <span className="text-primary">583+</span> Clients
           </div>
         </div>
       </div>
@@ -138,6 +127,7 @@ const HeroSection = () => {
           <div className="w-1 h-2 bg-primary rounded-full animate-pulse" />
         </div>
       </div>
+
     </section>
   );
 };
