@@ -104,8 +104,10 @@ const HeroSection = () => {
                   />
                 </div>
 
-                {/* Optional Soft Glass Overlay */}
-                <div className="absolute inset-0 rounded-full bg-white/5 backdrop-blur-sm pointer-events-none"></div>
+
+
+
+                
 
                 {/* Floating MERN Stack Label */}
                 <div className="absolute -top-6 left-1/2 -translate-x-1/2 px-4 py-1 glass-card text-sm font-medium animate-bounce" style={{ animationDuration: '3s' }}>
