@@ -76,12 +76,13 @@ const HeroSection = () => {
           </div>
 
         {/* Right Content - Profile Image */}
+{/* Right Content - Profile Image */}
 <div className="flex justify-center lg:justify-end order-1 lg:order-2">
   <div className="relative animate-slide-up">
-    
+
     {/* Glow Effect */}
     <div className="absolute inset-0 bg-primary/20 rounded-full blur-3xl scale-110" />
-    
+
     {/* Image Container */}
     <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 animate-float group">
       
@@ -90,17 +91,26 @@ const HeroSection = () => {
         className="absolute inset-0 rounded-full p-1 bg-gradient-to-r from-primary via-primary/50 to-transparent animate-spin"
         style={{ animationDuration: "8s" }}
       >
-        <div className="w-full h-full rounded-full bg-background overflow-hidden" />
+        {/* Remove inner bg layer */}
+        <div className="w-full h-full rounded-full overflow-hidden" />
       </div>
 
       {/* Profile Image */}
-      <div className="absolute inset-0 rounded-full overflow-hidden bg-gradient-to-br from-primary/20 to-secondary flex items-center justify-center transition-transform duration-500 group-hover:scale-105">
+      <div className="absolute inset-0 rounded-full overflow-hidden flex items-center justify-center transition-transform duration-500 group-hover:scale-105">
         <img
           src="/mypic.jpeg"
           alt="Profile"
           className="w-full h-full object-cover rounded-full"
         />
       </div>
+
+      {/* Optional Soft Glass Overlay */}
+      <div className="absolute inset-0 rounded-full bg-white/5 backdrop-blur-sm pointer-events-none"></div>
+
+    </div>
+  </div>
+</div>
+
 
       {/* Optional Glass Overlay */}
       <div className="absolute inset-0 rounded-full bg-white/5 backdrop-blur-sm pointer-events-none"></div>
