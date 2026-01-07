@@ -75,27 +75,40 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Right Content - Profile Image */}
-          <div className="flex justify-center lg:justify-end order-1 lg:order-2">
-            <div className="relative animate-slide-up">
-              {/* Glow Effect */}
-              <div className="absolute inset-0 bg-primary/20 rounded-full blur-3xl scale-110" />
-              
-              {/* Image Container */}
-              <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 animate-float">
-                {/* Rotating Border */}
-                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-primary via-primary/50 to-transparent p-1 animate-spin" style={{ animationDuration: '8s' }}>
-                  <div className="w-full h-full rounded-full bg-background" />
-                </div>
-                
-                {/* Profile Image */}
-                <div className="w-full h-full bg-gradient-to-br from-primary/20 to-secondary flex items-center justify-center">
-                   <img
-                    src="/mypic.jpeg"
-                    alt="Profile"
-                    className="w-full h-full object-cover"
-                  />
-                </div>  
+        {/* Right Content - Profile Image */}
+<div className="flex justify-center lg:justify-end order-1 lg:order-2">
+  <div className="relative animate-slide-up">
+    
+    {/* Glow Effect */}
+    <div className="absolute inset-0 bg-primary/20 rounded-full blur-3xl scale-110" />
+    
+    {/* Image Container */}
+    <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 animate-float group">
+      
+      {/* Rotating Gradient Border */}
+      <div
+        className="absolute inset-0 rounded-full p-1 bg-gradient-to-r from-primary via-primary/50 to-transparent animate-spin"
+        style={{ animationDuration: "8s" }}
+      >
+        <div className="w-full h-full rounded-full bg-background overflow-hidden" />
+      </div>
+
+      {/* Profile Image */}
+      <div className="absolute inset-0 rounded-full overflow-hidden bg-gradient-to-br from-primary/20 to-secondary flex items-center justify-center transition-transform duration-500 group-hover:scale-105">
+        <img
+          src="/mypic.jpeg"
+          alt="Profile"
+          className="w-full h-full object-cover rounded-full"
+        />
+      </div>
+
+      {/* Optional Glass Overlay */}
+      <div className="absolute inset-0 rounded-full bg-white/5 backdrop-blur-sm pointer-events-none"></div>
+
+    </div>
+  </div>
+</div>
+
                 {/* Floating Elements */}
                 <div className="absolute -top-4 -right-4 px-4 py-2 glass-card text-sm font-medium animate-bounce" style={{ animationDuration: '3s' }}>
                   <span className="text-primary">MERN</span> Stack
