@@ -23,7 +23,7 @@ const HeroSection = () => {
 
       <div className="container-custom relative z-10 pt-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          
+
           {/* Left Content */}
           <div className="text-center lg:text-left order-2 lg:order-1">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6 animate-fade-in">
@@ -78,7 +78,7 @@ const HeroSection = () => {
           </div>
 
           {/* Right Content - Profile Image */}
-          <div className="flex justify-center lg:justify-end order-1 lg:order-2">
+          <div className="flex justify-center lg:justify-end order-1 lg:order-2 relative">
             <div className="relative animate-slide-up">
 
               {/* Glow Effect */}
@@ -107,17 +107,20 @@ const HeroSection = () => {
                 {/* Optional Soft Glass Overlay */}
                 <div className="absolute inset-0 rounded-full bg-white/5 backdrop-blur-sm pointer-events-none"></div>
 
+                {/* Floating MERN Stack Label */}
+                <div className="absolute -top-6 left-1/2 -translate-x-1/2 px-4 py-1 glass-card text-sm font-medium animate-bounce" style={{ animationDuration: '3s' }}>
+                  <span className="text-primary">MERN</span> Stack
+                </div>
+
+                {/* Optional Floating Clients Label */}
+                <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 px-4 py-1 glass-card text-sm font-medium animate-bounce" style={{ animationDuration: '3.5s' }}>
+                  <span className="text-primary">583+</span> Clients
+                </div>
+
               </div>
             </div>
           </div>
 
-          {/* Floating Elements */}
-          <div className="absolute -top-4 -right-4 px-4 py-2 glass-card text-sm font-medium animate-bounce" style={{ animationDuration: '3s' }}>
-            <span className="text-primary">MERN</span> Stack
-          </div>
-          <div className="absolute -bottom-4 -left-4 px-4 py-2 glass-card text-sm font-medium animate-bounce" style={{ animationDuration: '3.5s' }}>
-            <span className="text-primary">583+</span> Clients
-          </div>
         </div>
       </div>
 
