@@ -7,15 +7,7 @@ const projects = [
   { id: 2, titleEn: 'E-commerce Platform', titleBn: 'ই-কমার্স প্ল্যাটফর্ম', descEn: 'Full-featured online store with payment integration', descBn: 'পেমেন্ট ইন্টিগ্রেশন সহ সম্পূর্ণ অনলাইন স্টোর', tech: ['React', 'Node.js', 'MongoDB', 'Stripe'], image: '/images/projects/img2.jpg', liveUrl: 'https://htbazar.com/', githubUrl: '#' },
   { id: 3, titleEn: 'Task Management App', titleBn: 'টাস্ক ম্যানেজমেন্ট অ্যাপ', descEn: 'Real-time collaborative task management', descBn: 'রিয়েল-টাইম কোলাবোরেটিভ টাস্ক ম্যানেজমেন্ট', tech: ['React', 'Socket.io', 'Express', 'PostgreSQL'], image: '/images/projects/img3.jpg', liveUrl: '#', githubUrl: '#' },
   { id: 4, titleEn: 'Restaurant Website', titleBn: 'রেস্টুরেন্ট ওয়েবসাইট', descEn: 'Online ordering system for restaurants', descBn: 'রেস্টুরেন্টের জন্য অনলাইন অর্ডারিং সিস্টেম', tech: ['React', 'Node.js', 'MongoDB'], image: '/images/projects/img4.jpg', liveUrl: '#', githubUrl: '#' },
-  { id: 5, titleEn: 'Social Media Dashboard', titleBn: 'সোশ্যাল মিডিয়া ড্যাশবোর্ড', descEn: 'Analytics dashboard for social media', descBn: 'সোশ্যাল মিডিয়ার জন্য অ্যানালিটিক্স ড্যাশবোর্ড', tech: ['React', 'Chart.js', 'Node.js', 'Redis'], image: '/images/projects/img5.jpg', liveUrl: '#', githubUrl: '#' },
-  { id: 6, titleEn: 'Blog Platform', titleBn: 'ব্লগ প্ল্যাটফর্ম', descEn: 'Modern blogging platform with CMS', descBn: 'সিএমএস সহ আধুনিক ব্লগিং প্ল্যাটফর্ম', tech: ['Next.js', 'Prisma', 'PostgreSQL'], image: '/images/projects/img6.jpg', liveUrl: '#', githubUrl: '#' },
-  { id: 7, titleEn: 'Fitness Tracker', titleBn: 'ফিটনেস ট্র্যাকার', descEn: 'Health and fitness tracking application', descBn: 'স্বাস্থ্য ও ফিটনেস ট্র্যাকিং অ্যাপ্লিকেশন', tech: ['React Native', 'Node.js', 'MongoDB'], image: '/images/projects/img7.jpg', liveUrl: '#', githubUrl: '#' },
-  { id: 8, titleEn: 'Learning Platform', titleBn: 'লার্নিং প্ল্যাটফর্ম', descEn: 'Online education and course platform', descBn: 'অনলাইন শিক্ষা ও কোর্স প্ল্যাটফর্ম', tech: ['React', 'Node.js', 'AWS', 'MongoDB'], image: '/images/projects/img8.jpg', liveUrl: '#', githubUrl: '#' },
-  { id: 9, titleEn: 'Real Estate Portal', titleBn: 'রিয়েল এস্টেট পোর্টাল', descEn: 'Property listing and management system', descBn: 'প্রপার্টি লিস্টিং ও ম্যানেজমেন্ট সিস্টেম', tech: ['React', 'Node.js', 'MongoDB', 'Maps API'], image: '/images/projects/img9.jpg', liveUrl: '#', githubUrl: '#' },
-  { id: 10, titleEn: 'Event Management', titleBn: 'ইভেন্ট ম্যানেজমেন্ট', descEn: 'Event booking and management platform', descBn: 'ইভেন্ট বুকিং ও ম্যানেজমেন্ট প্ল্যাটফর্ম', tech: ['Next.js', 'Stripe', 'PostgreSQL'], image: '/images/projects/img10.jpg', liveUrl: '#', githubUrl: '#' },
-  { id: 11, titleEn: 'Chat Application', titleBn: 'চ্যাট অ্যাপ্লিকেশন', descEn: 'Real-time messaging application', descBn: 'রিয়েল-টাইম মেসেজিং অ্যাপ্লিকেশন', tech: ['React', 'Socket.io', 'Node.js', 'Redis'], image: '/images/projects/img11.jpg', liveUrl: '#', githubUrl: '#' },
-  { id: 12, titleEn: 'Weather App', titleBn: 'ওয়েদার অ্যাপ', descEn: 'Beautiful weather forecasting app', descBn: 'সুন্দর আবহাওয়া পূর্বাভাস অ্যাপ', tech: ['React', 'Weather API', 'Tailwind'], image: '/images/projects/img12.jpg', liveUrl: '#', githubUrl: '#' },
-];
+  ];
 
 const PortfolioSection = () => {
   const { t } = useLanguage();
