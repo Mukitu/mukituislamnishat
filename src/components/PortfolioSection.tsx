@@ -3,8 +3,8 @@ import { ExternalLink, Github, ChevronDown } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 const projects = [
-  { id: 1, titleEn: 'E-commerce Platform', titleBn: 'ই-কমার্স প্ল্যাটফর্ম', descEn: 'Full-featured online store with payment integration', descBn: 'পেমেন্ট ইন্টিগ্রেশন সহ সম্পূর্ণ অনলাইন স্টোর', tech: ['React', 'Node.js', 'MongoDB', 'Stripe'], image: '/images/projects/img1.jpg', liveUrl: 'https://ghorerbazar.com/'},
-  { id: 2, titleEn: 'E-commerce Platform', titleBn: 'ই-কমার্স প্ল্যাটফর্ম', descEn: 'Full-featured online store with payment integration', descBn: 'পেমেন্ট ইন্টিগ্রেশন সহ সম্পূর্ণ অনলাইন স্টোর', tech: ['React', 'Node.js', 'MongoDB', 'Stripe'], image: '/images/projects/img2.jpg', liveUrl: 'https://htbazar.com/'},
+  { id: 1, titleEn: 'E-commerce Platform', titleBn: 'ই-কমার্স প্ল্যাটফর্ম', descEn: 'Full-featured online store with payment integration', descBn: 'পেমেন্ট ইন্টিগ্রেশন সহ সম্পূর্ণ অনলাইন স্টোর', tech: ['React', 'Node.js', 'MongoDB', 'Stripe'], image: '/images/projects/img11.jpg', liveUrl: '#'},
+  { id: 2, titleEn: 'E-commerce Platform', titleBn: 'ই-কমার্স প্ল্যাটফর্ম', descEn: 'Full-featured online store with payment integration', descBn: 'পেমেন্ট ইন্টিগ্রেশন সহ সম্পূর্ণ অনলাইন স্টোর', tech: ['React', 'Node.js', 'MongoDB', 'Stripe'], image: '/images/projects/img22.jpg', liveUrl: '#'},
   { id: 3, titleEn: 'Task Management App', titleBn: 'টাস্ক ম্যানেজমেন্ট অ্যাপ', descEn: 'Real-time collaborative task management', descBn: 'রিয়েল-টাইম কোলাবোরেটিভ টাস্ক ম্যানেজমেন্ট', tech: ['React', 'Socket.io', 'Express', 'PostgreSQL'], image: '/images/projects/img3.jpg', liveUrl: 'https://nishatai.vercel.app/'},
   { id: 4, titleEn: 'Bangladesh Tax & Government Utility', titleBn: 'বাংলাদেশ কর ও সরকারি ইউটিলিটি', descEn: 'Real-time Tax & Government Utility', descBn: 'রিয়েল-টাইম কর ও সরকারি ইউটিলিটি', tech: ['React', 'HTML', 'TypeScript','tailwind css'], image: '/images/projects/img4.jpg', liveUrl: 'https://next-tax.vercel.app/'},
   ];
